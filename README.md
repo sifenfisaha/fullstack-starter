@@ -30,6 +30,27 @@ A professional starter template for shipping full-stack features quickly with a 
 └─ README.md
 ```
 
+## Use This Starter For a New Repository
+
+Clone this starter and detach it from the original git history:
+
+```bash
+git clone https://github.com/sifenfisaha/fullstack-starter.git my-new-project
+cd my-new-project
+rm -rf .git
+```
+
+Initialize your own repository and push to your new remote:
+
+```bash
+git init
+git add .
+git commit -m "chore: initialize project from starter"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-new-repo>.git
+git push -u origin main
+```
+
 ## Quick Start
 
 1. Install dependencies
@@ -157,12 +178,3 @@ pnpm db:migrate
 ```bash
 pnpm db:check
 ```
-
-Note: Drizzle commands require `DATABASE_URL` to be set in `apps/server/.env`.
-
-## Recommended Starter Conventions
-
-- Keep feature code isolated per workspace (`apps/client`, `apps/server`).
-- Move API routes into modules as the backend grows.
-- Keep schema and migrations under `apps/server/src/db` and `apps/server/drizzle`.
-- Add shared scripts/tooling at the root to keep future projects consistent.
