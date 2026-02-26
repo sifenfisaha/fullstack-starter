@@ -19,11 +19,14 @@
     "dotenv": "latest",
     "drizzle-orm": "latest",
     "express": "latest",
-    "pg": "latest"
+    "morgan": "^1.10.1",
+    "pg": "latest",
+    "winston": "^3.19.0"
   },
   "devDependencies": {
     "@types/cors": "latest",
     "@types/express": "latest",
+    "@types/morgan": "^1.9.10",
     "@types/node": "latest",
     "@types/pg": "latest",
     "drizzle-kit": "^0.31.9",

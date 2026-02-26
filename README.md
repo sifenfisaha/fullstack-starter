@@ -108,6 +108,7 @@ Source: `apps/server/.env.example`
 - `PORT`
 - `CORS_ORIGIN`
 - `DATABASE_URL`
+- `LOG_LEVEL`
 
 ### Client (`apps/client/.env.local`)
 
